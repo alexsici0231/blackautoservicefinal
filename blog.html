@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Блог автосервиса | Советы по ремонту авто | Black Auto Service Chișinău</title>
+<meta name="description" content="Полезные статьи об обслуживании и ремонте автомобилей. Когда менять ремень ГРМ, признаки износа сцепления, покраска авто и многое другое. Black Auto Service Chișinău.">
+<meta name="keywords" content="блог автосервис,когда менять ремень грм,замена масла,ремонт подвески,покраска авто кишинев,диагностика авто,подготовка авто к зиме,замена сцепления,ремонт бампера">
+<link rel="canonical" href="https://blackautoservice.md/blog.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="lang.css">
+<style>
+:root{--bg:#080808;--bg2:#101010;--bg3:#161616;--bdr:#232323;--red:#C8102E;--red2:#a50d25;--white:#f5f5f5;--gray:#999;--gray2:#555;--fh:'Bebas Neue',sans-serif;--fb:'Inter',sans-serif;--nh:70px;--r:10px;--t:.22s ease}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:var(--fb);line-height:1.65;overflow-x:hidden;padding-top:var(--nh)}
+a{color:inherit;text-decoration:none}button{cursor:pointer;font-family:var(--fb)}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-thumb{background:var(--red)}
+.con{max-width:1180px;margin:0 auto;padding:0 5%}
+nav{position:fixed;top:0;left:0;width:100%;z-index:200;height:var(--nh);background:rgba(8,8,8,.96);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--bdr);display:flex;align-items:center;justify-content:space-between;padding:0 5%}
+.nb{font-family:var(--fh);font-size:20px;letter-spacing:.06em}.nb span{color:var(--red)}
+.nl{display:flex;gap:28px}.nl a{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);transition:color .2s}.nl a:hover{color:var(--white)}
+.nr{display:flex;gap:14px;align-items:center}
+.nc{display:flex;align-items:center;gap:8px;background:var(--red);color:#fff;padding:9px 18px;border-radius:7px;font-size:13px;font-weight:700;transition:background .2s}.nc:hover{background:var(--red2)}
+.bb{display:none;background:none;border:1px solid var(--bdr);border-radius:7px;padding:9px 12px;flex-direction:column;gap:5px}.bb span{width:20px;height:2px;background:var(--white);display:block;border-radius:1px}
+.mm{display:none;position:fixed;inset:0;top:var(--nh);z-index:190;background:var(--bg);padding:40px 6%;flex-direction:column;overflow-y:auto}
+.mm.open{display:flex}.mm a{font-family:var(--fh);font-size:32px;border-bottom:1px solid var(--bdr);padding:14px 0;color:var(--white)}
+footer{border-top:1px solid var(--bdr);background:var(--bg2);padding:36px 0;margin-top:80px}
+@media(max-width:900px){.nl{display:none}.bb{display:flex}}
+</style>
+<style>
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.blog-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.blog-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nb">BLACK <span>AUTO</span>SERVICE</a>
+  <div class="nl">
+    <a href="index.html#services"><span data-ru>Услуги</span><span data-ro>Servicii</span></a>
+    <a href="index.html#why"><span data-ru>О нас</span><span data-ro>Despre noi</span></a>
+    <a href="blog.html"><span data-ru>Блог</span><span data-ro>Blog</span></a>
+    <a href="index.html#map"><span data-ru>Контакты</span><span data-ro>Contacte</span></a>
+  </div>
+  <div class="nr">
+    <div class="lb">
+      <button class="on" onclick="setLang('ru')" type="button">RU</button>
+      <button onclick="setLang('ro')" type="button">RO</button>
+    </div>
+    <a href="tel:+37368078078" class="nc">📞 068 078 078</a>
+    <button class="bb" onclick="document.getElementById('mm').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mm" id="mm">
+  <a href="index.html#services" onclick="document.getElementById('mm').classList.remove('open')"><span data-ru>Услуги</span><span data-ro>Servicii</span></a>
+  <a href="blog.html" onclick="document.getElementById('mm').classList.remove('open')"><span data-ru>Блог</span><span data-ro>Blog</span></a>
+  <a href="index.html#map" onclick="document.getElementById('mm').classList.remove('open')"><span data-ru>Контакты</span><span data-ro>Contacte</span></a>
+  <a href="tel:+37368078078" class="mobile-phone">068 078 078</a>
+</div>
+<main class="blog-main">
+  <div class="con">
+    <div class="section-label"><span data-ru>Блог</span><span data-ro>Blog</span></div>
+    <h1 class="page-title"><span data-ru>Полезные статьи</span><span data-ro>Articole utile</span></h1>
+    <p class="page-description"><span data-ru>Советы по обслуживанию, разбор поломок и ответы на популярные вопросы от мастеров Black Auto Service.</span><span data-ro>Sfaturi de întreținere, analiza defecțiunilor și răspunsuri la întrebările frecvente de la specialiștii Black Auto Service.</span></p>
+    <div class="blog-grid">
+      <a href="blog/kogda-menyat-remen-grm.html" class="blog-card">
+        <div class="blog-card-head grad-1">
+          <span class="card-icon">⚙️</span>
+          <div class="card-label"><span data-ru>Двигатель</span><span data-ro>Motor</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>Когда нужно менять ремень ГРМ?</span><span data-ro>Când se schimbă cureaua de distribuție?</span></h2>
+          <p class="card-desc"><span data-ru>Последствия обрыва ремня ГРМ катастрофические — капремонт двигателя. Рассказываем о пробеге, признаках износа и цене замены в Кишинёве.</span><span data-ro>Consecințele rupturii curelei de distribuție sunt catastrofale — revizie majoră a motorului. Vorbim despre kilometraj, semnele uzurii și costul schimbului în Chișinău.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 7 мин</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/zamena-stsepleniya.html" class="blog-card">
+        <div class="blog-card-head grad-2">
+          <span class="card-icon">🔩</span>
+          <div class="card-label"><span data-ru>Трансмиссия</span><span data-ro>Transmisie</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>5 признаков износа сцепления</span><span data-ro>5 semne că ambreajul se uzează</span></h2>
+          <p class="card-desc"><span data-ru>Пробуксовка, рывки при трогании, запах горелого — разбираем симптомы и объясняем, когда пора в сервис.</span><span data-ro>Alunecare, șuturi la pornire, miros de ars — analizăm simptomele și explicăm când e cazul să veniți la service.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 5 мин</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/pokraska-avto.html" class="blog-card">
+        <div class="blog-card-head grad-3">
+          <span class="card-icon">🎨</span>
+          <div class="card-label"><span data-ru>Кузов</span><span data-ro>Caroserie</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>Покраска авто: полный гид</span><span data-ro>Vopsirea maşinii: ghid complet</span></h2>
+          <p class="card-desc"><span data-ru>Полная или частичная покраска, выбор лака, подбор цвета и гарантия. Всё что нужно знать перед визитом в покрасочный цех.</span><span data-ro>Vopsire completă sau parţială, alegerea lacului, selecţia culorii şi garanţia. Tot ce trebuie să ştii înainte de vizita în secţia de vopsire.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 8 мин</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/remont-podveski.html" class="blog-card">
+        <div class="blog-card-head grad-4">
+          <span class="card-icon">🔧</span>
+          <div class="card-label"><span data-ru>Подвеска</span><span data-ro>Suspensie</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>Почему скрипит и стучит подвеска?</span><span data-ro>De ce scârțâie și pocnește suspensia?</span></h2>
+          <p class="card-desc"><span data-ru>Стук на кочках, скрип при повороте — диагностируем причины и объясняем, что можно откладывать, а что нельзя.</span><span data-ro>Pocnete pe denivelări, scârțâit la viraje — diagnosticăm cauzele și explicăm ce poate aștepta și ce trebuie reparat urgent.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 6 мин</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/zamena-masla.html" class="blog-card">
+        <div class="blog-card-head grad-5">
+          <span class="card-icon">🛢️</span>
+          <div class="card-label"><span data-ru>ТО</span><span data-ro>Întreținere</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>Как часто менять масло в двигателе?</span><span data-ro>Cât de des se schimbă uleiul de motor?</span></h2>
+          <p class="card-desc"><span data-ru>Каждые 10 000 км или раз в год? Разбираем мифы и даём чёткие рекомендации для Молдовы и наших дорог.</span><span data-ro>La fiecare 10.000 km sau o dată pe an? Demontăm miturile și oferim recomandări clare pentru Moldova și drumurile noastre.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 5 мин</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/zapraska-kondicionera.html" class="blog-card">
+        <div class="blog-card-head grad-6">
+          <span class="card-icon">❄️</span>
+          <div class="card-label"><span data-ru>Климат</span><span data-ro>Climatizare</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>Заправка кондиционера авто: когда и зачем?</span><span data-ro>Încărcarea aerului condiționat auto: când și de ce?</span></h2>
+          <p class="card-desc"><span data-ru>Фреон испаряется постепенно — примерно 15% в год. Рассказываем о признаках нехватки фреона и стоимости заправки.</span><span data-ro>Freonul se evaporă treptat — aproximativ 15% pe an. Vorbim despre semnele lipsei de freon și despre costul reîncărcării.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 4 мин</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/rihtovka-kuzova.html" class="blog-card">
+        <div class="blog-card-head grad-7">
+          <span class="card-icon">💻</span>
+          <div class="card-label"><span data-ru>Диагностика</span><span data-ro>Diagnosticare</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>Рихтовка или замена детали — что выгоднее?</span><span data-ro>Îndreptare sau înlocuire piesă — ce este mai avantajos?</span></h2>
+          <p class="card-desc"><span data-ru>Вмятина на двери или крыле — не всегда надо покупать новую деталь. Разбираем, когда рихтовка реально выгоднее.</span><span data-ro>Dentă la portieră sau aripă — nu întotdeauna trebuie să cumpărați o piesă nouă. Analizăm când îndreptarea este cu adevărat mai avantajoasă.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 6 мин</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/remont-bamperov.html" class="blog-card">
+        <div class="blog-card-head grad-8">
+          <span class="card-icon">🌨️</span>
+          <div class="card-label"><span data-ru>Сезонное</span><span data-ro>Sezonier</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>Ремонт бампера vs покупка нового</span><span data-ro>Reparare bara vs cumpărare nouă</span></h2>
+          <p class="card-desc"><span data-ru>Треснувший или сломанный бампер? Сварка пластика зачастую обходится в 3–5 раз дешевле нового. Объясняем когда это возможно.</span><span data-ro>Bara crăpată sau ruptă? Sudarea plasticului costă de obicei de 3–5 ori mai puțin decât una nouă. Explicăm când este posibil.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 5 мин</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/diagnostika-avto.html" class="blog-card">
+        <div class="blog-card-head grad-7">
+          <span class="card-icon">💻</span>
+          <div class="card-label"><span data-ru>Диагностика</span><span data-ro>Diagnosticare</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>Компьютерная диагностика авто: что это?</span><span data-ro>Diagnosticare computerizată auto: ce înseamnă?</span></h2>
+          <p class="card-desc"><span data-ru>Что именно проверяет диагностика, что означает check engine и почему не стоит её игнорировать. Простым языком.</span><span data-ro>Ce verifică diagnosticarea auto, ce înseamnă check engine și de ce nu trebuie ignorat. Simplu și clar.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 5 мин</span>
+          </div>
+        </div>
+      </a>
+      <a href="blog/podgotovka-avto-k-zime.html" class="blog-card">
+        <div class="blog-card-head grad-8">
+          <span class="card-icon">🌨️</span>
+          <div class="card-label"><span data-ru>Сезонное</span><span data-ro>Sezonier</span></div>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"><span data-ru>Подготовка авто к зиме: чек-лист</span><span data-ro>Pregătirea mașinii pentru iarnă: checklist</span></h2>
+          <p class="card-desc"><span data-ru>10 пунктов, которые нужно проверить до первых морозов. Подвеска, аккумулятор, антифриз, резина — разбираем всё.</span><span data-ro>10 puncte de verificat înainte de primele înghețuri. Suspensia, bateria, antigelul, anvelopele — analizăm totul.</span></p>
+          <div class="card-footer">
+            <span class="read-link"><span data-ru>Читать →</span><span data-ro>Citește →</span></span>
+            <span class="card-meta">📖 7 мин</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="con">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div>BLACK <span>AUTO</span>SERVICE</div>
+        <div class="footer-copy">© 2025 · str. Varnița 2/3, Chișinău · 068 078 078</div>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html" class="footer-link"><span data-ru>Главная</span><span data-ro>Acasă</span></a>
+        <a href="blog.html" class="footer-link"><span data-ru>Блог</span><span data-ro>Blog</span></a>
+        <a href="privacy.html" class="footer-link"><span data-ru>Конфиденциальность</span><span data-ro>Confidențialitate</span></a>
+        <a href="cookies.html" class="footer-link">Cookie</a>
+        <a href="index.html#map" class="footer-link"><span data-ru>Контакты</span><span data-ro>Contacte</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="lang.js"></script>
+</body>
+</html>
